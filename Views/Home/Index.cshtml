@@ -1,0 +1,77 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: stretch; /* Stretch items to the same height */
+            margin: 20px; /* Add some margin around the container */
+        }
+        
+        .text-content {
+            padding: 10px; /* Padding inside the text card */
+            flex: 1; /* Allow text content to grow */
+            overflow: auto; /* Allow scrolling if content overflows */
+            display: flex; /* Use flexbox for centering */
+            flex-direction: column; /* Stack content vertically */
+            justify-content: center; /* Center content vertically */
+            text-align: center; /* Center text horizontally */
+        }
+        .image-content {
+            flex: 1; /* Allow image content to grow */
+            display: flex; /* Use flexbox for image */
+            justify-content: center; /* Center the image */
+            align-items: center; /* Center the image */
+        }
+        img {
+            width: 100%; /* Make image fill the container */
+            height: 100%; /* Make image fill the container */
+            object-fit: cover; /* Maintain aspect ratio and cover the area */
+        }
+
+        .large-italic {
+            font-size: 4vw; /* Responsive font size */
+            font-style: italic; /* Make text italic */
+            font-weight: normal; /* Ensure the font is not bold */
+            font-family: 'Arial', sans-serif; /* Change to your desired font family */
+        }
+        .first-line {
+            margin-bottom: 5vw; /* Responsive margin */
+        }
+        .second-line {
+            margin-bottom: 5vw; /* Responsive margin */
+            font-size: 3vw; /* Responsive font size */
+        }
+        .display-4 {
+            font-size: 6vw; /* Responsive font size for the main title */
+            text-align: center; /* Center the title */
+        }
+    </style>
+</head>
+<body>
+    <div class="text-center">
+        <h1 class="display-4">Welcome to My Portfolio</h1>
+        
+        <div class="container">
+            <div class="text-content">
+                <h1 class="large-italic first-line">
+                    Hola 👋 I am Aanam 
+                </h1>
+                <h1 class="large-italic second-line" style="margin-top: 0;">
+                    A Full-Time Soccer Fan and a Part-Time Developer
+                </h1>
+            </div>
+            <div class="image-content">
+                <img src="ai_pic.jpg" alt="Description of image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
